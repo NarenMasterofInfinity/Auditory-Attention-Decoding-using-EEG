@@ -1,4 +1,4 @@
-# Helper Module (DTU AAD) — Reference
+# Helper Module — Reference
 
 This guide explains all functions in **`helper.py`** for working with the DTU auditory attention dataset:
 
