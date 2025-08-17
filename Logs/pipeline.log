@@ -1,0 +1,7 @@
+2025-08-15 16:26:27,914 [INFO] Loading .mat file: /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-15 16:26:28,862 [ERROR] EEG or fs_eeg not found in .mat file.
+2025-08-15 16:27:21,430 [INFO] Loading .mat file: /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-15 16:27:22,245 [ERROR] EEG or fs_eeg not found in .mat file.
+2025-08-15 17:25:11,680 [INFO] Loading subject 1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-15 17:37:58,080 [INFO] Loading subject 1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-15 17:40:56,158 [INFO] Loading subject 1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat

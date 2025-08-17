@@ -1,0 +1,72 @@
+2025-08-17 13:23:22,885 | INFO | run_batch | Running CCA for subject S01
+2025-08-17 13:23:24,310 | INFO | run_cca_for_subject | Loaded subject S1: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:27,569 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1461, r_test=0.0660
+2025-08-17 13:23:27,739 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:27,744 | INFO | run_batch | Running CCA for subject S02
+2025-08-17 13:23:28,786 | INFO | run_cca_for_subject | Loaded subject S2: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:31,841 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1551, r_test=-0.0042
+2025-08-17 13:23:31,953 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:31,958 | INFO | run_batch | Running CCA for subject S03
+2025-08-17 13:23:33,038 | INFO | run_cca_for_subject | Loaded subject S3: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:36,308 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1350, r_test=0.0629
+2025-08-17 13:23:36,425 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:36,430 | INFO | run_batch | Running CCA for subject S04
+2025-08-17 13:23:37,503 | INFO | run_cca_for_subject | Loaded subject S4: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:40,942 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1503, r_test=-0.0130
+2025-08-17 13:23:41,077 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:41,082 | INFO | run_batch | Running CCA for subject S05
+2025-08-17 13:23:42,165 | INFO | run_cca_for_subject | Loaded subject S5: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:45,691 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1382, r_test=-0.0230
+2025-08-17 13:23:45,814 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:45,819 | INFO | run_batch | Running CCA for subject S06
+2025-08-17 13:23:46,900 | INFO | run_cca_for_subject | Loaded subject S6: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:50,205 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1453, r_test=-0.0205
+2025-08-17 13:23:50,329 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:50,335 | INFO | run_batch | Running CCA for subject S07
+2025-08-17 13:23:51,415 | INFO | run_cca_for_subject | Loaded subject S7: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:54,445 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1446, r_test=0.0710
+2025-08-17 13:23:54,569 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:54,576 | INFO | run_batch | Running CCA for subject S08
+2025-08-17 13:23:55,705 | INFO | run_cca_for_subject | Loaded subject S8: EEG (192000, 64), fs=64.0
+2025-08-17 13:23:59,605 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1379, r_test=0.0337
+2025-08-17 13:23:59,747 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:23:59,753 | INFO | run_batch | Running CCA for subject S09
+2025-08-17 13:24:00,813 | INFO | run_cca_for_subject | Loaded subject S9: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:04,202 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1469, r_test=0.0330
+2025-08-17 13:24:04,330 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:04,335 | INFO | run_batch | Running CCA for subject S10
+2025-08-17 13:24:05,378 | INFO | run_cca_for_subject | Loaded subject S10: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:08,524 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1337, r_test=0.0220
+2025-08-17 13:24:08,647 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:08,652 | INFO | run_batch | Running CCA for subject S11
+2025-08-17 13:24:09,752 | INFO | run_cca_for_subject | Loaded subject S11: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:13,104 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1581, r_test=-0.0417
+2025-08-17 13:24:13,227 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:13,233 | INFO | run_batch | Running CCA for subject S12
+2025-08-17 13:24:14,299 | INFO | run_cca_for_subject | Loaded subject S12: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:17,511 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1516, r_test=0.0260
+2025-08-17 13:24:17,635 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:17,641 | INFO | run_batch | Running CCA for subject S13
+2025-08-17 13:24:18,707 | INFO | run_cca_for_subject | Loaded subject S13: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:22,149 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1466, r_test=0.0160
+2025-08-17 13:24:22,283 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:22,288 | INFO | run_batch | Running CCA for subject S14
+2025-08-17 13:24:23,452 | INFO | run_cca_for_subject | Loaded subject S14: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:27,251 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1468, r_test=0.0140
+2025-08-17 13:24:27,380 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:27,386 | INFO | run_batch | Running CCA for subject S15
+2025-08-17 13:24:28,442 | INFO | run_cca_for_subject | Loaded subject S15: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:31,850 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1499, r_test=0.0684
+2025-08-17 13:24:31,971 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:31,977 | INFO | run_batch | Running CCA for subject S16
+2025-08-17 13:24:33,070 | INFO | run_cca_for_subject | Loaded subject S16: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:36,621 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1592, r_test=0.0108
+2025-08-17 13:24:36,745 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:36,751 | INFO | run_batch | Running CCA for subject S17
+2025-08-17 13:24:38,087 | INFO | run_cca_for_subject | Loaded subject S17: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:41,230 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1674, r_test=-0.0120
+2025-08-17 13:24:41,357 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
+2025-08-17 13:24:41,362 | INFO | run_batch | Running CCA for subject S18
+2025-08-17 13:24:42,476 | INFO | run_cca_for_subject | Loaded subject S18: EEG (192000, 64), fs=64.0
+2025-08-17 13:24:45,696 | INFO | run_cca_for_subject | CCA (lags=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]... total 17) -> r_train=0.1506, r_test=0.0019
+2025-08-17 13:24:45,831 | INFO | plot_reconstruction | Saved reconstruction plot -> figures/cca_envelope_reconstruction.png
