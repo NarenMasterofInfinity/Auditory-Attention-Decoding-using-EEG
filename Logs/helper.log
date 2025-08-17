@@ -1,0 +1,337 @@
+2025-08-16 16:51:50,443 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms_1.png
+2025-08-16 16:51:50,445 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 16:51:50,445 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 16:51:50,454 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-16 16:51:51,166 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:51:51,927 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:51:52,192 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:51:52,381 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:51:53,144 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:51:53,341 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:51:53,504 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:51:53,616 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:51:53,632 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.000, B%=0.000
+2025-08-16 16:51:54,273 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:51:54,469 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:51:54,793 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:51:54,953 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=0.0
+2025-08-16 16:51:55,145 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms.png
+2025-08-16 16:51:55,801 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:51:56,018 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:51:56,161 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:51:56,920 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:51:57,123 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:51:57,263 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:51:57,382 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:51:57,399 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.000, B%=0.000
+2025-08-16 16:51:57,608 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms_1.png
+2025-08-16 16:51:57,884 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:51:57,884 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 16:51:58,095 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:51:58,095 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-16 16:52:24,181 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms.png
+2025-08-16 16:52:24,182 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 16:52:24,182 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 16:52:24,190 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-16 16:52:24,900 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:52:25,577 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:52:25,822 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:52:25,972 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:52:26,803 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:52:27,058 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:52:27,238 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:52:27,385 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:52:27,404 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.000, B%=0.000
+2025-08-16 16:52:28,057 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:52:28,316 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:52:28,644 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:52:28,799 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=0.0
+2025-08-16 16:52:29,008 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms.png
+2025-08-16 16:52:29,699 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:52:29,955 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:52:30,119 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:52:30,939 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:52:31,172 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:52:31,338 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:52:31,481 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:52:31,510 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.000, B%=0.000
+2025-08-16 16:52:31,718 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms.png
+2025-08-16 16:52:31,940 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:52:31,941 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 16:52:32,144 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:52:32,145 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-16 16:57:48,218 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms_1.png
+2025-08-16 16:57:48,219 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 16:57:48,219 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 16:57:48,905 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:57:49,608 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:57:49,848 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:57:50,287 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:57:51,046 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:57:51,287 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:57:51,562 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:57:51,718 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:57:51,733 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.566, B%=0.433
+2025-08-16 16:57:52,385 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:57:52,625 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:57:52,910 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:57:53,112 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=99.8
+2025-08-16 16:57:53,295 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms_1.png
+2025-08-16 16:57:53,962 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:57:54,203 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:57:54,465 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:57:55,343 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:57:55,559 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:57:55,699 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:57:55,810 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:57:55,824 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.566, B%=0.433
+2025-08-16 16:57:56,004 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms_1.png
+2025-08-16 16:57:56,223 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:57:56,223 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 16:57:56,445 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:57:56,445 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-16 16:59:16,245 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms_2.png
+2025-08-16 16:59:16,246 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 16:59:16,246 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 16:59:16,255 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-16 16:59:16,891 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:59:17,482 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:59:17,673 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:59:17,782 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:59:18,458 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:59:18,648 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:59:18,739 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:59:18,839 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:59:18,853 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.566, B%=0.433
+2025-08-16 16:59:19,440 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:59:19,633 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:59:19,781 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:59:19,922 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=99.8
+2025-08-16 16:59:20,099 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms_2.png
+2025-08-16 16:59:20,691 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:59:20,876 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:59:20,984 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:59:21,681 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 16:59:21,873 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:59:21,980 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 16:59:22,085 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 16:59:22,100 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.566, B%=0.433
+2025-08-16 16:59:22,275 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms_2.png
+2025-08-16 16:59:22,472 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:59:22,473 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 16:59:22,667 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 16:59:22,667 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-16 17:02:00,033 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms.png
+2025-08-16 17:02:00,035 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 17:02:00,035 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 17:02:00,049 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-16 17:02:01,335 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:02:02,452 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:02:02,963 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:02:03,565 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:02:05,115 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:02:05,605 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:02:06,179 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:02:06,686 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:02:06,744 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.566, B%=0.433
+2025-08-16 17:02:07,900 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:02:08,378 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:02:09,087 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:02:09,696 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=99.8
+2025-08-16 17:02:09,936 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms.png
+2025-08-16 17:02:11,126 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:02:11,666 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:02:12,250 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:02:13,805 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:02:14,348 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:02:15,008 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:02:15,561 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:02:15,684 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.566, B%=0.433
+2025-08-16 17:02:16,050 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms.png
+2025-08-16 17:02:16,639 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:02:16,644 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 17:02:17,160 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:02:17,164 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-16 17:03:23,020 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms.png
+2025-08-16 17:03:23,021 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 17:03:23,021 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 17:03:23,032 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-16 17:03:23,673 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:03:24,263 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:03:24,455 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:03:24,569 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:03:25,248 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:03:25,433 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:03:25,527 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:03:25,625 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:03:25,640 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.000, B%=0.000
+2025-08-16 17:03:26,242 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:03:26,435 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:03:26,536 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:03:26,640 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=0.0
+2025-08-16 17:03:26,843 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms.png
+2025-08-16 17:03:27,444 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:03:27,648 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:03:27,754 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:03:28,436 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:03:28,635 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:03:28,731 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:03:28,827 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:03:28,841 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.000, B%=0.000
+2025-08-16 17:03:29,019 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms.png
+2025-08-16 17:03:29,232 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:03:29,233 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 17:03:29,430 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:03:29,431 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-16 17:05:13,351 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms_1.png
+2025-08-16 17:05:13,352 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 17:05:13,352 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 17:05:13,361 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-16 17:05:14,003 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:05:14,604 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:05:14,788 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:05:14,901 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:05:15,589 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:05:15,774 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:05:15,867 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:05:15,967 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:05:15,981 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-16 17:05:16,582 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:05:16,770 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:05:16,866 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:05:17,004 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=100.0
+2025-08-16 17:05:17,181 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms_1.png
+2025-08-16 17:05:17,785 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:05:17,981 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:05:18,084 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:05:18,780 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:05:18,967 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:05:19,076 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:05:19,173 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:05:19,187 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-16 17:05:19,369 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms_1.png
+2025-08-16 17:05:19,579 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:05:19,580 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 17:05:19,796 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:05:19,797 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-16 17:10:46,165 | INFO | plot_audio | Saved plot_audio -> figures/audio_0ms_1000ms_2.png
+2025-08-16 17:10:46,166 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-16 17:10:46,166 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-16 17:10:46,175 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-16 17:10:46,821 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:10:47,419 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:10:47,615 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:10:47,925 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:10:48,610 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:10:48,795 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:10:48,969 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:10:49,072 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:10:49,086 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-16 17:10:49,689 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:10:49,877 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:10:50,110 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:10:50,217 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=100.0
+2025-08-16 17:10:50,417 | INFO | plot_window | Saved plot_window -> figures/S01_eeg_audio_0ms_10000ms_2.png
+2025-08-16 17:10:51,035 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:10:51,228 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:10:51,352 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:10:52,062 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-16 17:10:52,255 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:10:52,358 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-16 17:10:52,464 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-16 17:10:52,479 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-16 17:10:52,665 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures/eeg_audio_5000ms_15000ms_2.png
+2025-08-16 17:10:52,875 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:10:52,875 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-16 17:10:53,080 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-16 17:10:53,080 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-17 13:23:23,769 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-17 13:23:24,065 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:24,190 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:24,293 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:24,308 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-17 13:23:28,361 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-08-17 13:23:28,559 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:28,665 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:28,766 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:28,783 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-08-17 13:23:32,539 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-08-17 13:23:32,762 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:32,900 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:33,022 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:33,038 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-08-17 13:23:37,074 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-08-17 13:23:37,271 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:37,378 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:37,486 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:37,502 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-08-17 13:23:41,716 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-08-17 13:23:41,917 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:42,033 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:42,147 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:42,161 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-08-17 13:23:46,462 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-08-17 13:23:46,670 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:46,778 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:46,885 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:46,900 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-08-17 13:23:50,972 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-08-17 13:23:51,171 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:51,281 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:51,399 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:51,415 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-08-17 13:23:55,224 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-08-17 13:23:55,423 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:23:55,530 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-08-17 13:23:55,683 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:23:55,704 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-08-17 13:24:00,383 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-08-17 13:24:00,582 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:00,691 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:00,798 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:00,813 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-08-17 13:24:04,965 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-08-17 13:24:05,152 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:05,261 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:05,364 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:05,378 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-08-17 13:24:09,324 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-08-17 13:24:09,522 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:09,629 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:09,737 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:09,751 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-08-17 13:24:13,870 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-08-17 13:24:14,066 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:14,173 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:14,284 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:14,298 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-08-17 13:24:18,274 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-08-17 13:24:18,468 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:18,576 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:18,686 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:18,703 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-08-17 13:24:22,984 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-08-17 13:24:23,217 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:23,326 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:23,437 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:23,451 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-08-17 13:24:28,016 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-08-17 13:24:28,211 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:28,323 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:28,427 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:28,442 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-17 13:24:32,637 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-08-17 13:24:32,835 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:32,944 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:33,055 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:33,069 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-08-17 13:24:37,437 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-08-17 13:24:37,706 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:37,892 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:38,065 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:38,087 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-08-17 13:24:42,019 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-08-17 13:24:42,229 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-17 13:24:42,347 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-08-17 13:24:42,458 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-17 13:24:42,476 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
