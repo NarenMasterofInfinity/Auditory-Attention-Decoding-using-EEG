@@ -245,3 +245,34 @@
 2025-08-16 17:10:52,875 | INFO | get_audio_signal | Concatenated 60 trials for stream A
 2025-08-16 17:10:53,080 | INFO | _explode_trials_from_group | Exploded group into 60 trials
 2025-08-16 17:10:53,080 | INFO | get_audio_signal | Concatenated 60 trials for stream B
+2025-08-21 21:10:35,084 | INFO | plot_audio | Saved plot_audio -> figures\audio_0ms_1000ms_3.png
+2025-08-21 21:10:35,098 | INFO | get_audio_signal | Concatenated 2 trials for stream A
+2025-08-21 21:10:35,098 | INFO | get_audio_signal | Concatenated 2 trials for stream B
+2025-08-21 21:10:35,129 | INFO | eeg_and_attended_envelope | eeg_and_attended_envelope -> EEG (2000, 32), ENV (2000,)
+2025-08-21 21:10:35,944 | INFO | load_mat_for_subject | Loaded MAT for S1 from D:\FYP\DATA_preproc\S1_data_preproc.mat
+2025-08-21 21:10:36,742 | INFO | load_mat_for_subject | Loaded MAT for S1 from D:\FYP\DATA_preproc\S1_data_preproc.mat
+2025-08-21 21:10:36,941 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-21 21:10:37,065 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-21 21:10:38,004 | INFO | load_mat_for_subject | Loaded MAT for S1 from D:\FYP\DATA_preproc\S1_data_preproc.mat
+2025-08-21 21:10:38,213 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-21 21:10:38,338 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-21 21:10:38,483 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-21 21:10:38,520 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-21 21:10:39,337 | INFO | load_mat_for_subject | Loaded MAT for S1 from D:\FYP\DATA_preproc\S1_data_preproc.mat
+2025-08-21 21:10:39,530 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-21 21:10:39,654 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-21 21:10:39,868 | INFO | plot_window | Window 0.00-10.00s A%=0.0 B%=100.0
+2025-08-21 21:10:40,107 | INFO | plot_window | Saved plot_window -> figures\S01_eeg_audio_0ms_10000ms_3.png
+2025-08-21 21:10:40,976 | INFO | load_mat_for_subject | Loaded MAT for S1 from D:\FYP\DATA_preproc\S1_data_preproc.mat
+2025-08-21 21:10:41,178 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-21 21:10:41,286 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-21 21:10:42,323 | INFO | load_mat_for_subject | Loaded MAT for S1 from D:\FYP\DATA_preproc\S1_data_preproc.mat
+2025-08-21 21:10:42,522 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-21 21:10:42,619 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-21 21:10:42,749 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-21 21:10:42,784 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-21 21:10:43,101 | INFO | plot_eeg_and_audio | Saved plot_eeg_and_audio -> figures\eeg_audio_5000ms_15000ms_3.png
+2025-08-21 21:10:43,352 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-21 21:10:43,353 | INFO | get_audio_signal | Concatenated 60 trials for stream A
+2025-08-21 21:10:43,565 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-21 21:10:43,566 | INFO | get_audio_signal | Concatenated 60 trials for stream B
