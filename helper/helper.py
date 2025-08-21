@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 from scipy import io as sio, signal
 from gammatone.filters import centre_freqs, make_erb_filters, erb_filterbank
-from scipy.io.matlab.mio5_params import mat_struct
+from scipy.io.matlab import mat_struct
 from matplotlib.lines import Line2D
 
 

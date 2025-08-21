@@ -10,7 +10,7 @@ import helper
 # ---------------------------------------------------------------------
 # Config via environment variables
 # ---------------------------------------------------------------------
-PREPROC_DIR = "/home/naren-root/Documents/FYP/AAD/Notebooks/Dataset/DATA_preproc/"
+PREPROC_DIR = "D:/FYP/DATA_preproc/"
 SUBJ_ID = 1
 
 FIG_DIR = Path("figures"); FIG_DIR.mkdir(parents=True, exist_ok=True)
