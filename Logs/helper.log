@@ -887,3 +887,918 @@
 2025-08-21 22:01:07,283 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
 2025-08-21 22:01:07,442 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
 2025-08-21 22:01:07,487 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-08-31 00:43:20,698 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-31 00:43:20,907 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-31 00:43:21,084 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-31 00:43:21,181 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-31 00:43:21,210 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-31 00:43:54,968 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-31 00:43:55,163 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-31 00:43:55,315 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-31 00:43:55,423 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-31 00:43:55,438 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-31 00:44:08,943 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-31 00:44:09,144 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-31 00:44:09,265 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-31 00:44:09,357 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-31 00:44:09,372 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-31 00:44:43,765 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-31 00:44:43,963 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-31 00:44:44,107 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-31 00:44:44,206 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-31 00:44:44,221 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-08-31 00:45:31,582 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-08-31 00:45:31,774 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-08-31 00:45:31,886 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-08-31 00:45:31,992 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-08-31 00:45:32,007 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 18:10:06,653 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 18:10:06,849 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 18:10:06,953 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 18:10:07,042 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 18:10:07,072 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 18:10:17,870 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 18:10:18,053 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 18:10:18,157 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 18:10:18,252 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 18:10:18,266 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 18:46:24,282 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 18:46:24,470 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 18:46:24,578 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 18:46:24,670 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 18:46:24,684 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 18:51:55,974 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 18:51:56,165 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 18:51:56,270 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 18:51:56,360 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 18:51:56,374 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 22:45:07,770 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 22:45:07,952 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 22:45:08,058 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 22:45:08,150 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 22:45:08,164 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 22:45:41,729 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 22:45:41,919 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 22:45:42,027 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 22:45:42,124 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 22:45:42,138 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 22:46:37,334 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 22:46:37,526 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 22:46:37,634 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 22:46:37,726 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 22:46:37,740 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 22:46:54,627 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 22:46:54,817 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 22:46:54,925 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 22:46:55,014 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 22:46:55,029 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 22:50:20,415 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 22:50:20,607 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 22:50:20,717 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 22:50:20,811 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 22:50:20,825 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 23:37:47,537 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 23:37:47,728 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 23:37:47,837 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 23:37:47,936 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 23:37:47,950 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 23:38:14,968 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 23:38:15,157 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 23:38:15,265 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 23:38:15,360 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 23:38:15,374 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 23:38:55,211 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 23:38:55,397 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 23:38:55,509 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 23:38:55,611 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 23:38:55,625 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-01 23:39:29,584 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-01 23:39:29,771 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-01 23:39:29,880 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-01 23:39:29,979 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-01 23:39:29,993 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-02 09:11:17,403 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-02 09:11:17,587 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 09:11:17,697 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-02 09:11:17,792 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 09:11:17,806 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-02 09:30:04,930 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-02 09:30:05,145 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 09:30:05,274 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-02 09:30:05,392 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 09:30:05,408 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-02 09:32:12,300 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-02 09:32:12,487 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 09:32:12,599 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-02 09:32:12,700 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 09:32:12,714 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-02 10:14:27,044 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-02 10:14:27,233 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 10:14:27,334 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-02 10:14:27,438 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 10:14:27,452 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-02 10:56:40,143 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-02 10:56:40,336 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 10:56:40,441 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-02 10:56:40,550 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 10:56:40,564 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-02 11:38:50,811 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-02 11:38:51,001 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 11:38:51,107 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-02 11:38:51,215 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 11:38:51,229 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-02 12:18:58,413 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-02 12:18:58,602 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 12:18:58,709 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-02 12:18:58,819 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 12:18:58,833 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-02 14:40:28,842 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-02 14:40:29,040 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 14:40:29,147 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-02 14:40:29,248 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 14:40:29,277 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-02 15:44:27,467 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-02 15:44:27,653 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 15:44:27,756 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-02 15:44:27,863 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 15:44:27,878 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-02 16:47:52,189 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-02 16:47:52,383 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 16:47:52,489 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-02 16:47:52,602 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 16:47:52,616 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-02 17:51:06,720 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-02 17:51:06,918 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 17:51:07,024 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-02 17:51:07,139 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 17:51:07,153 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-02 18:55:05,949 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-02 18:55:06,147 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 18:55:06,254 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-02 18:55:06,366 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 18:55:06,380 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-02 19:59:35,694 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-02 19:59:35,896 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 19:59:36,004 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-02 19:59:36,116 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 19:59:36,130 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-02 21:04:19,255 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-09-02 21:04:19,462 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 21:04:19,624 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-09-02 21:04:19,736 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 21:04:19,750 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-09-02 22:09:13,742 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-09-02 22:09:13,940 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 22:09:14,083 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-09-02 22:09:14,197 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 22:09:14,211 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-09-02 23:13:44,497 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-09-02 23:13:44,699 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-02 23:13:44,886 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-09-02 23:13:45,000 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-02 23:13:45,014 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-03 00:18:14,975 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-09-03 00:18:15,173 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 00:18:15,280 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-09-03 00:18:15,392 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 00:18:15,407 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-03 01:22:46,393 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-09-03 01:22:46,603 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 01:22:46,712 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-09-03 01:22:46,829 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 01:22:46,844 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-03 01:42:24,499 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-03 01:42:24,693 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 01:42:24,866 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-03 01:42:24,980 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 01:42:24,995 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-03 02:46:43,408 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-09-03 02:46:43,611 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 02:46:43,724 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-09-03 02:46:43,846 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 02:46:43,860 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-03 03:50:49,746 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-03 03:50:49,940 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 03:50:50,075 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-03 03:50:50,193 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 03:50:50,209 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-03 04:54:57,712 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-09-03 04:54:57,916 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 04:54:58,167 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-09-03 04:54:58,283 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 04:54:58,297 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-03 05:59:07,555 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-09-03 05:59:07,753 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 05:59:08,003 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-09-03 05:59:08,115 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 05:59:08,130 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-03 07:03:21,399 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-09-03 07:03:21,594 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 07:03:21,795 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-09-03 07:03:21,914 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 07:03:21,929 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-03 08:07:27,839 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-09-03 08:07:28,038 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 08:07:28,213 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-09-03 08:07:28,329 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 08:07:28,344 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-09-03 09:17:06,374 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-03 09:17:06,579 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 09:17:06,948 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-03 09:17:07,053 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 09:17:07,068 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-03 09:51:21,274 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-03 09:51:21,462 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 09:51:21,755 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-03 09:51:21,858 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 09:51:21,882 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-03 23:55:21,811 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-03 23:55:22,014 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-03 23:55:22,122 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-03 23:55:22,222 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-03 23:55:22,250 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-04 00:00:04,488 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-04 00:00:04,674 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-04 00:00:04,782 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-04 00:00:04,871 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-04 00:00:04,886 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-04 00:08:09,885 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-04 00:08:10,074 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-04 00:08:10,181 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-04 00:08:10,270 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-04 00:08:10,284 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-04 03:37:04,560 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-04 03:37:04,762 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-04 03:37:04,861 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-04 03:37:04,965 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-04 03:37:04,979 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-04 07:06:23,147 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-04 07:06:23,334 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-04 07:06:23,439 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-04 07:06:23,547 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-04 07:06:23,560 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-04 10:34:23,187 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-04 10:34:23,388 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-04 10:34:23,488 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-04 10:34:23,594 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-04 10:34:23,608 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-04 14:02:58,681 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-04 14:02:58,879 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-04 14:02:58,983 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-04 14:02:59,093 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-04 14:02:59,107 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-05 10:12:46,149 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-05 10:12:46,346 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-05 10:12:46,451 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-05 10:12:46,539 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-05 10:12:46,557 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-05 13:40:40,306 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-09-05 13:40:40,509 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-05 13:40:40,606 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-09-05 13:40:40,700 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-05 13:40:40,714 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-09-05 17:08:40,443 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-09-05 17:08:40,647 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-05 17:08:40,745 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-09-05 17:08:40,842 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-05 17:08:40,858 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-09-05 20:41:05,584 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-09-05 20:41:05,784 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-05 20:41:05,907 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-09-05 20:41:06,013 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-05 20:41:06,028 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-06 00:13:32,103 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-09-06 00:13:32,304 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-06 00:13:32,415 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-09-06 00:13:32,519 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-06 00:13:32,534 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-06 03:43:29,295 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-09-06 03:43:29,508 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-06 03:43:29,696 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-09-06 03:43:29,803 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-06 03:43:29,817 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-06 07:13:32,168 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-06 07:13:32,371 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-06 07:13:32,475 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-06 07:13:32,585 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-06 07:13:32,599 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-06 15:02:26,678 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-06 15:02:26,872 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-06 15:02:26,977 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-06 15:02:27,071 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-06 15:02:27,097 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-06 18:34:38,701 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-09-06 18:34:38,908 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-06 18:34:39,131 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-09-06 18:34:39,241 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-06 18:34:39,255 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-06 22:11:02,670 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-09-06 22:11:02,886 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-06 22:11:02,990 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-09-06 22:11:03,113 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-06 22:11:03,128 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 01:46:14,759 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-09-07 01:46:14,958 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 01:46:15,097 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-09-07 01:46:15,210 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 01:46:15,224 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 05:21:31,962 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-09-07 05:21:32,157 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 05:21:32,293 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-09-07 05:21:32,409 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 05:21:32,423 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 08:56:44,226 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-09-07 08:56:44,422 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 08:56:44,613 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-09-07 08:56:44,726 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 08:56:44,740 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-09-07 18:43:22,877 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-07 18:43:23,087 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:43:23,366 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-07 18:43:23,479 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:43:23,507 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 18:44:11,175 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-07 18:44:11,375 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:44:11,567 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-07 18:44:11,669 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:44:11,685 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 18:45:02,779 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-07 18:45:02,976 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:45:03,098 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-07 18:45:03,193 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:45:03,207 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 18:45:49,898 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-07 18:45:50,102 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:45:50,204 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-07 18:45:50,302 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:45:50,316 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 18:46:36,989 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-07 18:46:37,183 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:46:37,283 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-07 18:46:37,377 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:46:37,391 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-07 18:47:24,321 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-07 18:47:24,519 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:47:24,619 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-07 18:47:24,713 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:47:24,727 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 18:48:11,785 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-09-07 18:48:11,985 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:48:12,085 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-09-07 18:48:12,178 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:48:12,192 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-09-07 18:48:59,326 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-09-07 18:48:59,536 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:48:59,636 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-09-07 18:48:59,731 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:48:59,745 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-09-07 18:49:47,121 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-09-07 18:49:47,323 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:49:47,425 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-09-07 18:49:47,528 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:49:47,542 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 18:50:34,865 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-09-07 18:50:35,068 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:50:35,174 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-09-07 18:50:35,268 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:50:35,282 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 18:51:22,849 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-09-07 18:51:23,047 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:51:23,155 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-09-07 18:51:23,252 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:51:23,268 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 18:52:10,881 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-07 18:52:11,085 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:52:11,254 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-07 18:52:11,350 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:52:11,364 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 18:52:58,948 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-09-07 18:52:59,159 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:52:59,345 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-09-07 18:52:59,444 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:52:59,459 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 18:53:47,069 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-07 18:53:47,281 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:53:47,592 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-07 18:53:47,695 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:53:47,712 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 18:54:35,347 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-09-07 18:54:35,553 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:54:35,822 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-09-07 18:54:35,922 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:54:35,936 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 18:55:23,636 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-09-07 18:55:23,840 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:55:24,068 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-09-07 18:55:24,165 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:55:24,180 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 18:56:11,881 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-09-07 18:56:12,096 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:56:12,365 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-09-07 18:56:12,461 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:56:12,477 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 18:57:00,352 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-09-07 18:57:00,567 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:57:00,856 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-09-07 18:57:00,953 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:57:00,969 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-09-07 18:57:48,803 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-07 18:57:49,018 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:57:49,265 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-07 18:57:49,364 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:57:49,379 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 18:58:37,207 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-07 18:58:37,427 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:58:37,632 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-07 18:58:37,733 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:58:37,748 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 18:59:25,796 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-07 18:59:26,007 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 18:59:26,199 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-07 18:59:26,309 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 18:59:26,329 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:00:14,106 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-07 19:00:14,329 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:00:14,434 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-07 19:00:14,537 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:00:14,553 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:01:02,466 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-07 19:01:02,677 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:01:02,785 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-07 19:01:02,883 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:01:02,897 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-07 19:01:50,871 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-07 19:01:51,084 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:01:51,197 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-07 19:01:51,291 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:01:51,306 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:02:39,289 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-09-07 19:02:39,498 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:02:39,611 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-09-07 19:02:39,710 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:02:39,725 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-09-07 19:03:27,747 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-09-07 19:03:27,970 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:03:28,081 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-09-07 19:03:28,181 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:03:28,195 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-09-07 19:04:16,458 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-09-07 19:04:16,670 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:04:16,780 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-09-07 19:04:16,881 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:04:16,895 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:05:05,221 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-09-07 19:05:05,430 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:05:05,540 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-09-07 19:05:05,640 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:05:05,655 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:05:53,720 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-09-07 19:05:53,940 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:05:54,051 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-09-07 19:05:54,150 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:05:54,164 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:06:42,512 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-07 19:06:42,738 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:06:42,848 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-07 19:06:42,949 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:06:42,964 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:07:31,294 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-09-07 19:07:31,508 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:07:31,622 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-09-07 19:07:31,720 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:07:31,735 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:08:20,071 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-07 19:08:20,283 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:08:20,416 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-07 19:08:20,532 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:08:20,548 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:09:09,067 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-09-07 19:09:09,286 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:09:09,424 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-09-07 19:09:09,538 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:09:09,555 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:09:58,190 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-09-07 19:09:58,417 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:09:58,556 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-09-07 19:09:58,670 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:09:58,685 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:10:47,221 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-09-07 19:10:47,437 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:10:47,574 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-09-07 19:10:47,688 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:10:47,704 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:11:36,250 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-09-07 19:11:36,477 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:11:36,622 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-09-07 19:11:36,743 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:11:36,759 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-09-07 19:12:25,412 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-07 19:12:25,632 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:12:25,768 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-07 19:12:25,884 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:12:25,902 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:13:14,603 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-07 19:13:14,821 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:13:14,957 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-07 19:13:15,073 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:13:15,089 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:14:03,812 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-07 19:14:04,045 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:14:04,182 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-07 19:14:04,299 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:14:04,316 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:14:53,073 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-07 19:14:53,299 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:14:53,441 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-07 19:14:53,571 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:14:53,588 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:15:42,425 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-07 19:15:42,653 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:15:42,790 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-07 19:15:42,906 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:15:42,923 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-07 19:16:31,663 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-07 19:16:31,891 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:16:32,040 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-07 19:16:32,156 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:16:32,174 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:17:20,952 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-09-07 19:17:21,170 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:17:21,326 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-09-07 19:17:21,442 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:17:21,460 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-09-07 19:18:10,266 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-09-07 19:18:10,495 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:18:10,633 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-09-07 19:18:10,752 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:18:10,769 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-09-07 19:18:59,702 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-09-07 19:18:59,927 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:19:00,065 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-09-07 19:19:00,191 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:19:00,208 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:19:49,086 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-09-07 19:19:49,315 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:19:49,452 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-09-07 19:19:49,568 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:19:49,584 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:20:38,308 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-09-07 19:20:38,534 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:20:38,672 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-09-07 19:20:38,787 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:20:38,804 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:21:27,574 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-07 19:21:27,795 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:21:27,932 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-07 19:21:28,048 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:21:28,065 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:22:16,946 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-09-07 19:22:17,164 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:22:17,309 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-09-07 19:22:17,429 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:22:17,446 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:23:06,303 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-07 19:23:06,531 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:23:06,673 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-07 19:23:06,790 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:23:06,807 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:23:55,650 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-09-07 19:23:55,874 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:23:56,024 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-09-07 19:23:56,140 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:23:56,157 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:24:45,169 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-09-07 19:24:45,385 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:24:45,535 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-09-07 19:24:45,652 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:24:45,669 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:25:34,533 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-09-07 19:25:34,758 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:25:34,897 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-09-07 19:25:35,016 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:25:35,034 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:26:23,895 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-09-07 19:26:24,121 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:26:24,257 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-09-07 19:26:24,374 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:26:24,390 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-09-07 19:27:13,278 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-07 19:27:13,497 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:27:13,634 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-07 19:27:13,754 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:27:13,771 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:28:02,479 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-07 19:28:02,707 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:28:02,843 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-07 19:28:02,958 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:28:02,974 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:28:51,992 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-07 19:28:52,209 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:28:52,395 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-07 19:28:52,513 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:28:52,529 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:29:40,581 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-07 19:29:40,787 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:29:40,923 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-07 19:29:41,039 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:29:41,056 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:30:28,896 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-07 19:30:29,100 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:30:29,277 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-07 19:30:29,392 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:30:29,408 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-07 19:31:17,021 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-07 19:31:17,230 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:31:17,365 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-07 19:31:17,482 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:31:17,499 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:32:05,158 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-09-07 19:32:05,366 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:32:05,474 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-09-07 19:32:05,579 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:32:05,593 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-09-07 19:32:53,214 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-09-07 19:32:53,413 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:32:53,535 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-09-07 19:32:53,630 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:32:53,645 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-09-07 19:33:41,104 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-09-07 19:33:41,318 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:33:41,453 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-09-07 19:33:41,551 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:33:41,565 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:34:29,041 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-09-07 19:34:29,250 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:34:29,359 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-09-07 19:34:29,456 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:34:29,470 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:35:16,825 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-09-07 19:35:17,033 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:35:17,141 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-09-07 19:35:17,242 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:35:17,256 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:36:04,583 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-07 19:36:04,792 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:36:04,900 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-07 19:36:04,993 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:36:05,007 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:36:52,226 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-09-07 19:36:52,434 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:36:52,543 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-09-07 19:36:52,637 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:36:52,652 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:37:39,893 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-07 19:37:40,098 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:37:40,207 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-07 19:37:40,304 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:37:40,318 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:38:27,510 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-09-07 19:38:27,711 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:38:27,820 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-09-07 19:38:27,916 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:38:27,930 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:39:15,158 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-09-07 19:39:15,366 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:39:15,475 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-09-07 19:39:15,570 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:39:15,584 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:40:02,755 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-09-07 19:40:02,955 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:40:03,064 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-09-07 19:40:03,157 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:40:03,172 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:40:50,188 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-09-07 19:40:50,395 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:40:50,504 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-09-07 19:40:50,598 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:40:50,613 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-09-07 19:41:37,765 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-07 19:41:37,976 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:41:38,085 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-07 19:41:38,187 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:41:38,201 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:42:25,417 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-07 19:42:25,618 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:42:25,726 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-07 19:42:25,821 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:42:25,835 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:43:12,848 | INFO | load_mat_for_subject | Loaded MAT for S3 from /home/naren-root/Dataset/DATA_preproc/S3_data_preproc.mat
+2025-09-07 19:43:13,049 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:43:13,167 | INFO | load_subject | Loaded subject S3: EEG (66, 192000), two_streams=True
+2025-09-07 19:43:13,262 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:43:13,276 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:44:00,340 | INFO | load_mat_for_subject | Loaded MAT for S4 from /home/naren-root/Dataset/DATA_preproc/S4_data_preproc.mat
+2025-09-07 19:44:00,539 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:44:00,648 | INFO | load_subject | Loaded subject S4: EEG (66, 192000), two_streams=True
+2025-09-07 19:44:00,746 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:44:00,760 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:44:47,804 | INFO | load_mat_for_subject | Loaded MAT for S5 from /home/naren-root/Dataset/DATA_preproc/S5_data_preproc.mat
+2025-09-07 19:44:48,013 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:44:48,122 | INFO | load_subject | Loaded subject S5: EEG (66, 192000), two_streams=True
+2025-09-07 19:44:48,216 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:44:48,230 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.433, B%=0.567
+2025-09-07 19:45:35,390 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-07 19:45:35,589 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:45:35,707 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-07 19:45:35,805 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:45:35,818 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-07 19:46:22,742 | INFO | load_mat_for_subject | Loaded MAT for S7 from /home/naren-root/Dataset/DATA_preproc/S7_data_preproc.mat
+2025-09-07 19:46:22,949 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:46:23,057 | INFO | load_subject | Loaded subject S7: EEG (66, 192000), two_streams=True
+2025-09-07 19:46:23,152 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:46:23,167 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.633, B%=0.367
+2025-09-07 19:47:10,144 | INFO | load_mat_for_subject | Loaded MAT for S8 from /home/naren-root/Dataset/DATA_preproc/S8_data_preproc.mat
+2025-09-07 19:47:10,344 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:47:10,452 | INFO | load_subject | Loaded subject S8: EEG (66, 192000), two_streams=True
+2025-09-07 19:47:10,548 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:47:10,562 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.333, B%=0.667
+2025-09-07 19:47:57,449 | INFO | load_mat_for_subject | Loaded MAT for S9 from /home/naren-root/Dataset/DATA_preproc/S9_data_preproc.mat
+2025-09-07 19:47:57,656 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:47:57,765 | INFO | load_subject | Loaded subject S9: EEG (66, 192000), two_streams=True
+2025-09-07 19:47:57,861 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:47:57,876 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:48:44,906 | INFO | load_mat_for_subject | Loaded MAT for S10 from /home/naren-root/Dataset/DATA_preproc/S10_data_preproc.mat
+2025-09-07 19:48:45,115 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:48:45,223 | INFO | load_subject | Loaded subject S10: EEG (66, 192000), two_streams=True
+2025-09-07 19:48:45,318 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:48:45,332 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:49:32,370 | INFO | load_mat_for_subject | Loaded MAT for S11 from /home/naren-root/Dataset/DATA_preproc/S11_data_preproc.mat
+2025-09-07 19:49:32,579 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:49:32,688 | INFO | load_subject | Loaded subject S11: EEG (66, 192000), two_streams=True
+2025-09-07 19:49:32,786 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:49:32,800 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.467, B%=0.533
+2025-09-07 19:50:19,848 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-07 19:50:20,048 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:50:20,157 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-07 19:50:20,254 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:50:20,268 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:51:07,088 | INFO | load_mat_for_subject | Loaded MAT for S13 from /home/naren-root/Dataset/DATA_preproc/S13_data_preproc.mat
+2025-09-07 19:51:07,294 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:51:07,401 | INFO | load_subject | Loaded subject S13: EEG (66, 192000), two_streams=True
+2025-09-07 19:51:07,502 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:51:07,518 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.400, B%=0.600
+2025-09-07 19:51:54,473 | INFO | load_mat_for_subject | Loaded MAT for S14 from /home/naren-root/Dataset/DATA_preproc/S14_data_preproc.mat
+2025-09-07 19:51:54,679 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:51:54,787 | INFO | load_subject | Loaded subject S14: EEG (66, 192000), two_streams=True
+2025-09-07 19:51:54,882 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:51:54,896 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:52:41,889 | INFO | load_mat_for_subject | Loaded MAT for S15 from /home/naren-root/Dataset/DATA_preproc/S15_data_preproc.mat
+2025-09-07 19:52:42,096 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:52:42,205 | INFO | load_subject | Loaded subject S15: EEG (66, 192000), two_streams=True
+2025-09-07 19:52:42,304 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:52:42,318 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:53:29,108 | INFO | load_mat_for_subject | Loaded MAT for S16 from /home/naren-root/Dataset/DATA_preproc/S16_data_preproc.mat
+2025-09-07 19:53:29,315 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:53:29,423 | INFO | load_subject | Loaded subject S16: EEG (66, 192000), two_streams=True
+2025-09-07 19:53:29,519 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:53:29,533 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-07 19:54:16,282 | INFO | load_mat_for_subject | Loaded MAT for S17 from /home/naren-root/Dataset/DATA_preproc/S17_data_preproc.mat
+2025-09-07 19:54:16,482 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:54:16,610 | INFO | load_subject | Loaded subject S17: EEG (66, 192000), two_streams=True
+2025-09-07 19:54:16,704 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:54:16,719 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.600, B%=0.400
+2025-09-07 19:55:03,714 | INFO | load_mat_for_subject | Loaded MAT for S18 from /home/naren-root/Dataset/DATA_preproc/S18_data_preproc.mat
+2025-09-07 19:55:03,914 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:55:04,023 | INFO | load_subject | Loaded subject S18: EEG (66, 192000), two_streams=True
+2025-09-07 19:55:04,116 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:55:04,131 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.367, B%=0.633
+2025-09-07 19:55:51,056 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-07 19:55:51,251 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:55:51,371 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-07 19:55:51,465 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:55:51,480 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-07 19:56:38,438 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-07 19:56:38,645 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-07 19:56:38,753 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-07 19:56:38,849 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-07 19:56:38,863 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-09 00:45:04,255 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 00:45:04,446 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 00:45:04,554 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 00:45:04,649 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 00:45:04,676 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-09 00:50:48,686 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 00:50:48,878 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 00:50:48,987 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 00:50:49,080 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 00:50:49,094 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-09 00:57:20,123 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 00:57:20,309 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 00:57:20,418 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 00:57:20,511 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 00:57:20,526 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-09 06:47:43,076 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-09 06:47:43,270 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 06:47:43,522 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-09 06:47:43,624 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 06:47:43,638 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-09 08:40:46,084 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 08:40:46,278 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 08:40:46,388 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 08:40:46,482 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 08:40:46,496 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-09 08:48:05,216 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 08:48:05,414 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 08:48:05,525 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 08:48:05,624 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 08:48:05,639 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-09 08:48:32,647 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 08:48:32,836 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 08:48:32,949 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 08:48:33,053 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 08:48:33,068 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-09 09:43:14,781 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 09:43:14,976 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 09:43:15,090 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 09:43:15,198 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 09:43:15,212 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-09 10:51:48,313 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-09 10:51:48,505 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-09 10:51:48,612 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-09 10:51:48,699 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-09 10:51:48,713 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-12 01:38:18,876 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-12 01:38:19,077 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-12 01:38:19,569 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-12 01:38:19,682 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-12 01:38:19,703 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-12 01:41:34,337 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-12 01:41:34,545 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-12 01:41:35,024 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-12 01:41:35,122 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-12 01:41:35,136 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-12 01:41:52,186 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-12 01:41:52,379 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-12 01:41:52,659 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-12 01:41:52,754 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-12 01:41:52,768 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-12 01:42:38,626 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-12 01:42:38,819 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-12 01:42:39,018 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-12 01:42:39,117 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-12 01:42:39,131 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-12 01:56:23,980 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-12 01:56:24,183 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-12 01:56:24,488 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-12 01:56:24,586 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-12 01:56:24,600 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-12 01:56:43,993 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-12 01:56:44,188 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-12 01:56:44,473 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-12 01:56:44,583 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-12 01:56:44,598 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-12 01:59:22,648 | INFO | load_mat_for_subject | Loaded MAT for S6 from /home/naren-root/Dataset/DATA_preproc/S6_data_preproc.mat
+2025-09-12 01:59:22,843 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-12 01:59:23,155 | INFO | load_subject | Loaded subject S6: EEG (66, 192000), two_streams=True
+2025-09-12 01:59:23,251 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-12 01:59:23,265 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.533, B%=0.467
+2025-09-14 23:39:18,719 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-14 23:39:18,921 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-14 23:39:19,034 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-14 23:39:19,136 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-14 23:39:19,159 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-15 00:04:54,763 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-15 00:04:54,950 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 00:04:55,064 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-15 00:04:55,165 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 00:04:55,179 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-15 00:42:18,673 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-15 00:42:18,876 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 00:42:19,129 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-15 00:42:19,237 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 00:42:19,252 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-15 00:49:28,010 | INFO | load_mat_for_subject | Loaded MAT for S12 from /home/naren-root/Dataset/DATA_preproc/S12_data_preproc.mat
+2025-09-15 00:49:28,197 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 00:49:28,308 | INFO | load_subject | Loaded subject S12: EEG (66, 192000), two_streams=True
+2025-09-15 00:49:28,410 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 00:49:28,425 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-15 00:51:16,886 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-15 00:51:17,077 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 00:51:17,188 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-15 00:51:17,286 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 00:51:17,300 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-15 09:28:24,494 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-15 09:28:24,684 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 09:28:24,791 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-15 09:28:24,884 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 09:28:24,898 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-15 10:06:07,211 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-15 10:06:07,404 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 10:06:07,511 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-15 10:06:07,604 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 10:06:07,619 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-15 10:09:07,206 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-15 10:09:07,529 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 10:09:07,636 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-15 10:09:07,736 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 10:09:07,750 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433
+2025-09-15 16:53:48,451 | INFO | load_mat_for_subject | Loaded MAT for S2 from /home/naren-root/Dataset/DATA_preproc/S2_data_preproc.mat
+2025-09-15 16:53:48,762 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 16:53:48,975 | INFO | load_subject | Loaded subject S2: EEG (66, 192000), two_streams=True
+2025-09-15 16:53:49,083 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 16:53:49,098 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.500, B%=0.500
+2025-09-15 18:07:28,854 | INFO | load_mat_for_subject | Loaded MAT for S1 from /home/naren-root/Dataset/DATA_preproc/S1_data_preproc.mat
+2025-09-15 18:07:29,036 | INFO | _explode_trials_from_group | Exploded group into 60 trials
+2025-09-15 18:07:29,145 | INFO | load_subject | Loaded subject S1: EEG (66, 192000), two_streams=True
+2025-09-15 18:07:29,240 | INFO | _clean_to_64 | Trimmed EEG channels 66->64
+2025-09-15 18:07:29,254 | INFO | subject_eeg_env_ab | Built attended envelope; A%=0.567, B%=0.433

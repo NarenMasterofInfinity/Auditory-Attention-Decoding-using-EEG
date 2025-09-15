@@ -381,14 +381,15 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
             wait += 1
             if wait >= patience:
                 break
-        
-             
+
     if best_state is not None:
         model.load_state_dict(best_state, strict=True)
+        # Save the best model weights in the output directory
+        torch.save(best_state, os.path.join(outdir, 'best_model.pt'))
 
     val_r_final = evaluate(model, val_ld, device, bt_chunk, amp_dtype)
     test_r_final = evaluate(model, test_ld, device, bt_chunk, amp_dtype)
-
+    
     with torch.no_grad():
         xb, yb = next(iter(val_ld)) if len(val_ld) > 0 else next(iter(test_ld))
         xb = xb.to(device, non_blocking=True)
@@ -442,7 +443,7 @@ def main():
 
     import csv
 
-    summ_path = os.path.join(args.outdir, "summary_pearsonr_s14.csv")
+    summ_path = os.path.join(args.outdir, "summary_pearsonr_best.csv")
     os.makedirs(args.outdir, exist_ok=True)
 
     if not os.path.exists(summ_path):
@@ -450,7 +451,9 @@ def main():
             w = csv.writer(f)
             w.writerow(['subject', 'val_r', 'test_r'])
 
-    for subj in range(14, 15):
+    for subj in range(12, 19):
+        if subj == 14:
+            continue
         sx = os.path.join(args.outdir, f"S{subj}")
         print(f"\n=== Subject {subj} → {sx} ===")
         val_r, test_r = train_one_subject(
