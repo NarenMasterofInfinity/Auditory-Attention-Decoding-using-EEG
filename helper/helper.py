@@ -573,7 +573,34 @@ def subject_eeg_env_ab(preproc_dir, subj_id, num_bands=32, fmin=50.0, fmax=None,
     _logger.info(f"Built attended envelope; A%={np.mean(att==1):.3f}, B%={np.mean(att==2):.3f}")
     return eeg_TxC, env_att, fs, att_AB
 
+def subject_eeg_env_ab_aad(preproc_dir, subj_id, num_bands=32, fmin=50.0, fmax=None,
+                       lowpass_hz=8.0, normalize="unit"):
+    D = load_subject(preproc_dir, subj_id, drop_exg=True)
+    fs = float(D["fs"])
+    eeg = np.asarray(D["eeg"], float)
+    ch_names = D.get("ch_names", None)
+    eeg, ch_names64, idx64 = _clean_to_64(eeg, ch_names)
+    T = eeg.shape[1]
+    att = np.asarray(D["attmask"], np.uint8)
+    wavA = np.asarray(D["envA"], float) 
+    wavB = np.asarray(D["envB"], float) 
 
+    # def _env(x):
+    #     env, _ = gammatone_hilbert_envelope(x, fs, num_bands=num_bands, fmin=fmin, fmax=fmax,
+    #                                         compress="pow", compress_exp=0.6, aggregate="sum",
+    #                                         lowpass_hz=lowpass_hz, target_fs=fs, normalize=normalize,
+    #                                         return_bands=False)
+    #     if env.size != T:
+    #         env = signal.resample(env, T)
+    #     return env.astype(float)
+
+    # envA = _env(wavA)
+    # envB = _env(wavB)
+ 
+    att_AB = np.where(att == 1, "A", np.where(att == 2, "B", "U")).astype("<U1")
+    eeg_TxC = eeg.T
+    _logger.info(f"Built attended envelope; A%={np.mean(att==1):.3f}, B%={np.mean(att==2):.3f}")
+    return eeg_TxC, wavA, wavB, fs, att_AB
 def plot_window(preproc_dir, subj_id, t_start, t_end, max_channels=None, figsize=(14, 7)):
     D = load_subject(preproc_dir, subj_id, drop_exg=True)
     fs, eeg, ch_names = D["fs"], D["eeg"], D["ch_names"]

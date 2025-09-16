@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """
-Temporal-first → Spatial (Graph) training:
-Shared per-channel GRU → GraphEncoder → MLP head
+Audio Envelope Reconstruction (AER)
+Temporal-first lag-aware Transformer (per-channel) → GraphEncoder → MLP head
 
 - 70/10/20 window split (fixed seed per subject)
-- Early stopping (best weights restored)
-- Loss: w_r * (1 - Pearson r) + w_abs * MSE
-- Mixed precision (bf16/fp16)
+- Loss = w_r*(1 - Pearson r) + w_abs*MSE
+- Early stopping (best restore)
+- AMP (bf16/fp16), AdamW + warmup-cosine, grad clip
 - Memory-friendly graph time-chunking (bt_chunk)
-- Saves A0.csv, A_final.csv, plots, and a test comparison figure
-- Loops over subjects and appends per-subject r to a CSV
+- Saves: best_model.pt, A0.csv, A_final.csv, training curves, adjacency plots,
+         and a test window figure (EEG stack + true vs predicted envelope).
 
 Assumes:
-  helper.subject_eeg_env_ab(PREPROC_DIR, subj_id) -> (eeg[T,C], env[T], fs, att_AB)
+  helper.subject_eeg_env_ab(preproc_dir, subj_id) -> (eeg[T,C], env[T], fs, att_AB)
   GraphEncoder in GraphEncoder1.py or graph_encoder_sparse.py
 """
 
-import os, math, time, argparse, numpy as np
+import os, math, time, argparse, csv, numpy as np
 import torch, torch.nn as nn, torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 
@@ -24,8 +24,12 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import mne
-import csv
-from GraphEncoder1 import GraphEncoder
+
+# ---- Graph encoder import ----
+try:
+    from GraphEncoder1 import GraphEncoder
+except Exception:
+    from graph_encoder_sparse import GraphEncoder
 
 import helper
 
@@ -47,7 +51,7 @@ def window_indices(T, win, hop):
     return np.array(idx, dtype=int)
 
 class EEGEnvDataset(Dataset):
-    """Yields: EEG_win [W,C], env_win [W]"""
+    """Yields EEG_win [W,C], env_win [W]"""
     def __init__(self, X, y, win, hop):
         self.X = X.astype(np.float32); self.y = y.astype(np.float32)
         self.win = int(win); self.hop = int(hop)
@@ -80,15 +84,13 @@ def subset_dataset(ds, idx):
 def plot_training_curves(hist, outdir):
     ensure_dir(outdir)
     plt.figure(figsize=(6,4))
-    plt.plot(hist['train_loss'], label='train')
-    plt.plot(hist['val_loss'], label='val')
+    plt.plot(hist['train_loss'], label='train'); plt.plot(hist['val_loss'], label='val')
     plt.xlabel('epoch'); plt.ylabel('loss (w_r·(1−r) + w_abs·MSE)')
     plt.legend(); plt.tight_layout()
     plt.savefig(os.path.join(outdir, 'training_curve.png'), dpi=150); plt.close()
 
     plt.figure(figsize=(6,4))
-    plt.plot(hist['train_r'], label='train r')
-    plt.plot(hist['val_r'], label='val r')
+    plt.plot(hist['train_r'], label='train r'); plt.plot(hist['val_r'], label='val r')
     plt.xlabel('epoch'); plt.ylabel('Pearson r')
     plt.legend(); plt.tight_layout()
     plt.savefig(os.path.join(outdir, 'training_r.png'), dpi=150); plt.close()
@@ -96,9 +98,7 @@ def plot_training_curves(hist, outdir):
 def plot_adjacency_heatmap(A, outdir, name='A_heatmap.png', title='Blended adjacency A'):
     ensure_dir(outdir)
     plt.figure(figsize=(6,5))
-    plt.imshow(A, cmap='viridis')
-    plt.colorbar(label='weight')
-    plt.title(title)
+    plt.imshow(A, cmap='viridis'); plt.colorbar(label='weight'); plt.title(title)
     plt.tight_layout(); plt.savefig(os.path.join(outdir, name), dpi=150); plt.close()
 
 def plot_sensor_edges(A, info, outdir, topk=120, name='A_edges_sensors.png', title='Top edges on sensor map'):
@@ -123,12 +123,9 @@ def plot_sensor_edges(A, info, outdir, topk=120, name='A_edges_sensors.png', tit
 
 def plot_sensor_edges_delta(A, A0, info, outdir, topk=80):
     ensure_dir(outdir)
-    if A0 is None:
-        return
-    D = np.clip(A - A0, 0, None)
-    pos = np.array([info.get_montage().get_positions()['ch_pos'][ch] for ch in info.ch_names])
-    P2 = pos[:, :2]
-    np.fill_diagonal(D, 0.0)
+    if A0 is None: return
+    D = np.clip(A - A0, 0, None); np.fill_diagonal(D, 0.0)
+    pos = np.array([info.get_montage().get_positions()['ch_pos'][ch] for ch in info.ch_names]); P2 = pos[:, :2]
     triu = np.triu_indices_from(D, k=1); vals = D[triu]
     k = min(topk, len(vals)); thr = np.partition(vals, -k)[-k] if k > 0 else 0.0
     sel = D >= thr
@@ -175,57 +172,184 @@ def plot_test_window_compare(x_win, y_win, yhat_win, fs, ch_names, outdir,
     plt.savefig(path, dpi=150); plt.close(fig); return path
 
 
-# -------------------- temporal-first model --------------------
+# -------------------- MNE helpers --------------------
 
-class SharedGRUTemporal(nn.Module):
-    """
-    Shared per-channel GRU.
-    Input:  X [B, T, C]
-    Output: H [B, T, C, d_t]
-    The same GRU weights are applied to each channel sequence (input size = 1).
-    """
-    def __init__(self, hidden=64, num_layers=1, dropout=0.1):
+def make_biosemi64_info(n_ch=64, sfreq=64.0):
+    if n_ch == 64:
+        montage = mne.channels.make_standard_montage('biosemi64')
+        ch_names = montage.ch_names
+        info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types='eeg')
+        info.set_montage(montage)
+        pos = np.stack([montage.get_positions()['ch_pos'][ch] for ch in ch_names])
+        return info, ch_names, pos
+    ch_names = [f'EEG{i}' for i in range(n_ch)]
+    info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types='eeg')
+    theta = np.linspace(0, 2*np.pi, n_ch, endpoint=False)
+    pos = np.stack([np.cos(theta), np.sin(theta), np.zeros_like(theta)], axis=1)
+    montage = mne.channels.make_dig_montage(ch_pos={ch: p for ch, p in zip(ch_names, pos)})
+    info.set_montage(montage)
+    return info, ch_names, pos
+
+
+# -------------------- lag-aware temporal transformer --------------------
+
+class CausalDWConv(nn.Module):
+    def __init__(self, d, kernel=9, dropout=0.1):
         super().__init__()
-        self.gru = nn.GRU(input_size=1, hidden_size=hidden, num_layers=num_layers,
-                          batch_first=True, dropout=0.0 if num_layers == 1 else dropout)
+        self.pad = kernel - 1
+        self.dw  = nn.Conv1d(d, d, kernel, groups=d)
+        self.pw  = nn.Conv1d(d, d, 1)
+        self.do  = nn.Dropout(dropout)
+        self.act = nn.SiLU()
+    def forward(self, x):
+        x = x.transpose(1,2)
+        y = F.pad(x, (self.pad, 0))
+        y = self.pw(self.act(self.dw(y)))
+        y = y[:, :, :x.size(-1)].transpose(1,2)
+        return self.do(y)
+
+class MultiShiftCausalMHSA(nn.Module):
+    """
+    Local causal attention with ALiBi-like bias and a small bank of time shifts for K/V.
+    """
+    def __init__(self, d, heads=2, window=64, shifts=(0,4,8,12), dropout=0.1):
+        super().__init__()
+        assert d % heads == 0
+        self.d = d; self.h = heads; self.dh = d // heads
+        self.q = nn.Linear(d, d); self.k = nn.Linear(d, d); self.v = nn.Linear(d, d)
+        self.proj = nn.Linear(d, d)
         self.do = nn.Dropout(dropout)
+        self.window = window
+        self.shifts = list(shifts)
+        self.shift_logits = nn.Parameter(torch.zeros(heads, len(self.shifts)))
+        self.alibi_slope = nn.Parameter(torch.ones(heads) * 0.01)
+
+    def _split(self, x):
+        B,T,_ = x.shape
+        return x.view(B,T,self.h,self.dh).transpose(1,2)
+    def _merge(self, x):
+        B,H,T,dh = x.shape
+        return x.transpose(1,2).contiguous().view(B,T,H*dh)
+
+    def forward(self, x):
+        B,T,D = x.shape
+        q = self._split(self.q(x))
+        k0 = self._split(self.k(x))
+        v0 = self._split(self.v(x))
+
+        pos = torch.arange(T, device=x.device)
+        dist = (pos[None, :] - pos[:, None]).clamp(min=0).float()  # past distances only
+        alibi = (-self.alibi_slope.view(1,self.h,1,1)) * dist      # [1,H,1,T,T]
+
+        Ks, Vs = [], []
+        for s in self.shifts:
+            if s == 0:
+                Ks.append(k0); Vs.append(v0)
+            else:
+                padk = torch.zeros_like(k0[:, :, :s, :])
+                padv = torch.zeros_like(v0[:, :, :s, :])
+                Ks.append(torch.cat([padk, k0[:, :, :-s, :]], dim=2))
+                Vs.append(torch.cat([padv, v0[:, :, :-s, :]], dim=2))
+        K = torch.stack(Ks, dim=2)  # [B,H,S,T,dh]
+        V = torch.stack(Vs, dim=2)  # [B,H,S,T,dh]
+
+        qn = q / math.sqrt(self.dh)
+        att = torch.einsum('bhtd,bhsTd->bhstT', qn, K)  # [B,H,S,T,T]
+
+        if self.window is not None and self.window < T:
+            idx = torch.arange(T, device=x.device)
+            keep = (idx[None,:] - idx[:,None])
+            keep = (keep >= 0) & (keep < self.window)
+            mask = (~keep).float() * -1e4
+            att = att + mask.unsqueeze(0).unsqueeze(0).unsqueeze(0)
+
+        att = att + alibi.unsqueeze(2)
+
+        pi = torch.softmax(self.shift_logits, dim=-1)               # [H,S]
+        att = att + torch.log(pi[None, :, :, None, None] + 1e-8)    # log-weights
+        att = att.logsumexp(dim=2)                                  # sum over shifts -> [B,H,T,T]
+        att = torch.softmax(att, dim=-1)
+
+        ctx = torch.einsum('bhTT,bhsTd->bhTd', att, V)              # [B,H,T,dh]
+        out = self._merge(ctx)                                      # [B,T,D]
+        out = self.proj(out)
+        return out
+
+class LATBlock(nn.Module):
+    def __init__(self, d_t=64, heads=2, window=64, shifts=(0,4,8,12), dropout=0.1, ffn_mult=2):
+        super().__init__()
+        self.ln1 = nn.LayerNorm(d_t)
+        self.attn = MultiShiftCausalMHSA(d=d_t, heads=heads, window=window, shifts=shifts, dropout=dropout)
+        self.ln2 = nn.LayerNorm(d_t)
+        self.conv = CausalDWConv(d_t, kernel=9, dropout=dropout)
+        self.ln3 = nn.LayerNorm(d_t)
+        self.ffn = nn.Sequential(
+            nn.Linear(d_t, ffn_mult*d_t), nn.SiLU(), nn.Dropout(dropout),
+            nn.Linear(ffn_mult*d_t, d_t), nn.Dropout(dropout)
+        )
+    def forward(self, x):
+        x = x + self.attn(self.ln1(x))
+        x = x + self.conv(self.ln2(x))
+        x = x + self.ffn(self.ln3(x))
+        return x
+
+class TemporalTransformerPerChannel(nn.Module):
+    """
+    Shared across channels: fold B*C, run LAT blocks, unfold.
+    Input:  EEG [B,T,C]  →  Output: H [B,T,C,d_t]
+    """
+    def __init__(self, d_t=64, depth=2, heads=2, window=64, shifts=(0,4,8,12), dropout=0.1):
+        super().__init__()
+        self.in_proj  = nn.Linear(1, d_t)
+        self.blocks   = nn.ModuleList([LATBlock(d_t, heads, window, shifts, dropout) for _ in range(depth)])
+        self.out_drop = nn.Dropout(dropout)
     def forward(self, X):
-        B, T, C = X.shape
-        x1 = X.transpose(1,2).reshape(B*C, T, 1)
-        h, _ = self.gru(x1)            # [B*C, T, hidden]
-        h = self.do(h)
-        H = h.reshape(B, C, T, -1).transpose(1,2)  # [B, T, C, hidden]
+        B,T,C = X.shape
+        x = X.transpose(1,2).reshape(B*C, T, 1)
+        h = self.in_proj(x)
+        for blk in self.blocks:
+            h = blk(h)
+        h = self.out_drop(h)
+        H = h.reshape(B, C, T, -1).transpose(1,2)
         return H
 
-class TemporalFirstGraphModel(nn.Module):
+
+# -------------------- model: temporal-first → graph --------------------
+
+class TemporalFirstGraphLATModel(nn.Module):
     """
-    SharedGRU temporal encoder → GraphEncoder (spatial) → MLP head.
-    Graph sees per-channel temporal features (and optional raw EEG).
+    Temporal transformer (per-channel) → GraphEncoder.
+    Optional raw-EEG concat to graph input and a residual bypass from temporal features.
     """
-    def __init__(self, n_ch, pos, d_t=64, use_raw=True,
-                 d_model=128, L=3, k=8, heads=4, dropout=0.1):
+    def __init__(self, n_ch, pos, d_t=64, depth=2, heads_temporal=2, window=64, shifts=(0,4,8,12),
+                 use_raw=False, d_model=128, L=3, k=8, heads_graph=4, dropout=0.1, bypass=True):
         super().__init__()
-        self.temporal = SharedGRUTemporal(hidden=d_t, num_layers=1, dropout=dropout)
-        d_in = d_t + (1 if use_raw else 0)
+        self.temporal = TemporalTransformerPerChannel(d_t=d_t, depth=depth, heads=heads_temporal,
+                                                      window=window, shifts=shifts, dropout=dropout)
         self.use_raw = use_raw
+        self.bypass = bypass
+        d_in = d_t + (1 if use_raw else 0)
         self.graph = GraphEncoder(pos=torch.tensor(pos, dtype=torch.float32),
-                                  d_in=d_in, d_model=d_model, L=L, k=k, heads=heads, dropout=dropout)
+                                  d_in=d_in, d_model=d_model, L=L, k=k, heads=heads_graph, dropout=dropout)
+        if bypass:
+            self.bypass_proj = nn.Linear(d_t, d_model)
         self.head = nn.Sequential(
             nn.LayerNorm(d_model), nn.Linear(d_model, 64), nn.SiLU(), nn.Linear(64, 1)
         )
 
     def forward(self, eeg, bt_chunk=None):
-        # eeg: [B,T,C]
         H = self.temporal(eeg)  # [B,T,C,d_t]
-        if self.use_raw:
-            Xin = torch.cat([H, eeg.unsqueeze(-1)], dim=-1)  # [B,T,C,d_t+1]
-        else:
-            Xin = H
+        Xin = H if not self.use_raw else torch.cat([H, eeg.unsqueeze(-1)], dim=-1)
         try:
-            _, S, A = self.graph(Xin, bt_chunk=bt_chunk)     # S: [B,T,d_model], A: [C,C]
+            _, S_graph, A = self.graph(Xin, bt_chunk=bt_chunk)     # [B,T,d_model], [C,C]
         except TypeError:
-            _, S, A = self.graph(Xin)
-        yhat = self.head(S).squeeze(-1)                      # [B,T]
+            _, S_graph, A = self.graph(Xin)
+        if self.bypass:
+            S0 = self.bypass_proj(H.mean(dim=2))                   # [B,T,d_model]
+            S = S_graph + S0
+        else:
+            S = S_graph
+        yhat = self.head(S).squeeze(-1)                            # [B,T]
         return yhat, A
 
 
@@ -262,10 +386,10 @@ def evaluate(model, loader, device, bt_chunk, amp_dtype):
     return r_sum / max(1, n)
 
 def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr, device,
-                      outdir, k, heads, blocks, bt_chunk, amp,
+                      outdir, k, heads_graph, blocks, bt_chunk, amp,
                       workers, prefetch, accum, compile_flag,
                       patience, min_delta, warmup_pct, final_lr_pct,
-                      w_r=0.7, w_abs=0.3, d_t=64, use_raw=True):
+                      w_r, w_abs, d_t, use_raw):
 
     ensure_dir(outdir)
 
@@ -286,22 +410,22 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
 
     ds = EEGEnvDataset(X, y, win, hop)
     tr_idx, va_idx, te_idx = split_indices(len(ds), 0.7, 0.1, seed=1000 + subj_id)
-    train_ds = subset_dataset(ds, tr_idx)
-    val_ds   = subset_dataset(ds, va_idx)
-    test_ds  = subset_dataset(ds, te_idx)
+    train_ds, val_ds, test_ds = subset_dataset(ds, tr_idx), subset_dataset(ds, va_idx), subset_dataset(ds, te_idx)
 
     train_ld = DataLoader(train_ds, batch_size=batch, shuffle=True, drop_last=True,
                           num_workers=workers, pin_memory=True,
-                          persistent_workers=(workers > 0), prefetch_factor=prefetch)
+                          persistent_workers=(workers>0), prefetch_factor=prefetch)
     val_ld = DataLoader(val_ds, batch_size=batch, shuffle=False,
                         num_workers=workers, pin_memory=True,
-                        persistent_workers=(workers > 0), prefetch_factor=prefetch)
+                        persistent_workers=(workers>0), prefetch_factor=prefetch)
     test_ld = DataLoader(test_ds, batch_size=batch, shuffle=False,
                          num_workers=workers, pin_memory=True,
-                         persistent_workers=(workers > 0), prefetch_factor=prefetch)
+                         persistent_workers=(workers>0), prefetch_factor=prefetch)
 
-    model = TemporalFirstGraphModel(n_ch=n_ch, pos=pos, d_t=d_t, use_raw=use_raw,
-                                    d_model=128, L=blocks, k=k, heads=heads, dropout=0.1).to(device)
+    model = TemporalFirstGraphLATModel(
+        n_ch=n_ch, pos=pos, d_t=d_t, depth=2, heads_temporal=2, window=64, shifts=(0,4,8,12),
+        use_raw=use_raw, d_model=128, L=blocks, k=k, heads_graph=heads_graph, dropout=0.1, bypass=True
+    ).to(device)
 
     if compile_flag:
         try: model = torch.compile(model, mode='max-autotune')
@@ -334,8 +458,8 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
             with torch.amp.autocast('cuda', enabled=(amp_dtype is not None), dtype=amp_dtype):
                 yhat, _ = model(xb, bt_chunk=bt_chunk)
                 r = pearsonr_batch(yhat, yb).mean()
-                mse_abs = F.mse_loss(yhat, yb)
-                loss = w_r * (1 - r) + w_abs * mse_abs
+                mse = F.mse_loss(yhat, yb)
+                loss = w_r * (1 - r) + w_abs * mse
                 loss = loss / max(1, accum)
 
             if use_fp16:
@@ -346,10 +470,8 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
             if (step % max(1, accum)) == 0:
                 if use_fp16: scaler.unscale_(opt)
                 nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-                if use_fp16:
-                    scaler.step(opt); scaler.update()
-                else:
-                    opt.step()
+                if use_fp16: scaler.step(opt); scaler.update()
+                else: opt.step()
                 opt.zero_grad(set_to_none=True)
                 sched.step()
                 global_step += 1
@@ -369,8 +491,8 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
                 with torch.amp.autocast('cuda', enabled=(amp_dtype is not None), dtype=amp_dtype):
                     yhat, _ = model(xb, bt_chunk=bt_chunk)
                     r = pearsonr_batch(yhat, yb).mean()
-                    mse_abs = F.mse_loss(yhat, yb)
-                    loss = w_r * (1 - r) + w_abs * mse_abs
+                    mse = F.mse_loss(yhat, yb)
+                    loss = w_r * (1 - r) + w_abs * mse
                 va_loss_sum += loss.item() * xb.size(0)
                 va_r_sum += r.item() * xb.size(0)
                 va_n += xb.size(0)
@@ -397,11 +519,9 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
     if best_state is not None:
         model.load_state_dict(best_state, strict=True)
 
-    # final metrics
     val_r_final = evaluate(model, val_ld, device, bt_chunk, amp_dtype)
     test_r_final = evaluate(model, test_ld, device, bt_chunk, amp_dtype)
 
-    # graphs & visualizations (use one batch)
     with torch.no_grad():
         pick_loader = val_ld if len(val_ld) > 0 else test_ld
         xb, yb = next(iter(pick_loader))
@@ -413,7 +533,6 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
     plot_adjacency_heatmap(A, outdir, name='A_heatmap.png', title='Blended adjacency A')
     info, ch_names, _pos = make_biosemi64_info(n_ch=n_ch, sfreq=fs)
     plot_sensor_edges(A, info, outdir, topk=120, name='A_edges_sensors.png')
-
     A0 = None
     try:
         A0 = model.graph.A0.detach().cpu().numpy()
@@ -425,7 +544,8 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
     plot_sensor_edges_delta(A, A0, info, outdir, topk=80)
     plot_in_strength_topomap(A, info, outdir)
 
-    # test window comparison
+    # test comparison figure (one window)
+    vis_dir = ensure_dir(os.path.join(outdir, "vis"))
     with torch.no_grad():
         for xb_te, yb_te in test_ld:
             xb_te = xb_te.to(device, non_blocking=True)
@@ -434,32 +554,12 @@ def train_one_subject(preproc_dir, subj_id, epochs, batch, win_sec, hop_sec, lr,
             y_win = yb_te[0].detach().cpu().numpy()
             yhat_win = yhat_te[0].detach().float().cpu().numpy()
             break
-    vis_dir = ensure_dir(os.path.join(outdir, "vis"))
     _, chn, _ = make_biosemi64_info(n_ch=n_ch, sfreq=fs)
     comp_path = plot_test_window_compare(x_win, y_win, yhat_win, fs, chn, vis_dir,
                                          eeg_channels_to_show=6, fname='test_compare_window.png')
     print(f"[viz] wrote {comp_path}")
 
     return float(val_r_final), float(test_r_final)
-
-
-# -------------------- mne utils --------------------
-
-def make_biosemi64_info(n_ch=64, sfreq=64.0):
-    if n_ch == 64:
-        montage = mne.channels.make_standard_montage('biosemi64')
-        ch_names = montage.ch_names
-        info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types='eeg')
-        info.set_montage(montage)
-        pos = np.stack([montage.get_positions()['ch_pos'][ch] for ch in ch_names])
-        return info, ch_names, pos
-    ch_names = [f'EEG{i}' for i in range(n_ch)]
-    info = mne.create_info(ch_names=ch_names, sfreq=sfreq, ch_types='eeg')
-    theta = np.linspace(0, 2*np.pi, n_ch, endpoint=False)
-    pos = np.stack([np.cos(theta), np.sin(theta), np.zeros_like(theta)], axis=1)
-    montage = mne.channels.make_dig_montage(ch_pos={ch: p for ch, p in zip(ch_names, pos)})
-    info.set_montage(montage)
-    return info, ch_names, pos
 
 
 # -------------------- main --------------------
@@ -470,10 +570,10 @@ def main():
     p.add_argument('--outdir', type=str, default='outputs_full')
     p.add_argument('--subjects', type=str, default='1-18', help='e.g., "1-18" or "1,3,5"')
     p.add_argument('--epochs', type=int, default=100)
-    p.add_argument('--batch', type=int, default=4)
+    p.add_argument('--batch', type=int, default=2)
     p.add_argument('--win_sec', type=float, default=5.0)
     p.add_argument('--hop_sec', type=float, default=2.5)
-    p.add_argument('--lr', type=float, default=3e-4)
+    p.add_argument('--lr', type=float, default=1e-4)
     p.add_argument('--device', type=str, default='cuda' if torch.cuda.is_available() else 'cpu')
     p.add_argument('--k', type=int, default=8)
     p.add_argument('--heads', type=int, default=4)
@@ -495,13 +595,12 @@ def main():
     args = p.parse_args()
 
     ensure_dir(args.outdir)
-    summ_path = os.path.join(args.outdir, "summary_pearsonr_temporal_first.csv")
+    summ_path = os.path.join(args.outdir, "summary_pearsonr_latxgraph.csv")
     if not os.path.exists(summ_path):
         with open(summ_path, 'w', newline='') as f:
             csv.writer(f).writerow(['subject', 'val_r', 'test_r'])
 
-    # parse subjects
-    subs = []
+    # subjects parsing
     if '-' in args.subjects:
         a, b = args.subjects.split('-'); subs = list(range(int(a), int(b) + 1))
     else:
@@ -518,9 +617,9 @@ def main():
             args.patience, args.min_delta, args.warmup_pct, args.final_lr_pct,
             args.w_r, args.w_abs, args.d_t, args.use_raw
         )
-        print(f"Subject {subj}: Val r={val_r:.4f} | Test r={test_r:.4f}")
         with open(summ_path, 'a', newline='') as f:
             csv.writer(f).writerow([subj, val_r, test_r])
+        print(f"Subject {subj}: Val r={val_r:.4f} | Test r={test_r:.4f}")
 
     print(f"\nWrote {summ_path}")
 
