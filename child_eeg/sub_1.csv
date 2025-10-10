@@ -1,0 +1,4 @@
+eeg_file,tsv_file,audio_file
+sub-NDARAC904DMU_task-DiaryOfAWimpyKid_eeg.set,sub-NDARAC904DMU_task-DiaryOfAWimpyKid_events.tsv,audio/Diary_of_wimpy_kid.wav
+sub-NDARAC904DMU_task-FunwithFractals_eeg.set,sub-NDARAC904DMU_task-FunwithFractals_events.tsv,audio/Fun_With_Fractals.wav
+sub-NDARAC904DMU_task-ThePresent_eeg.set,sub-NDARAC904DMU_task-ThePresent_events.tsv,audio/The_Present.wav

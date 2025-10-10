@@ -1,0 +1,4 @@
+row_index,style,best_val_loss,final_test_loss,final_test_r
+1,child,0.784815,0.868756,0.106547
+2,child,0.508277,0.578673,0.431993
+3,child,0.580531,0.606974,0.242963

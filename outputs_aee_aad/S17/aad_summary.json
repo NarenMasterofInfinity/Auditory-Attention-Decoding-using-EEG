@@ -1,0 +1,11 @@
+{
+  "subject": 17,
+  "n_windows": 1198,
+  "acc": 0.5592654424040067,
+  "mean_rA": 0.3478870202822781,
+  "mean_rB": -0.06869296300163236,
+  "ckpt": "outputs/S17/best_model.pt",
+  "win_sec": 5.0,
+  "hop_sec": 2.5,
+  "lag_ms": 120.0
+}

@@ -1,0 +1,17 @@
+Channels displayed: ['Cz', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']
+Window: 20.00–25.00s
+
+50 Hz band power (avg across channels):
+  RAW   : 2.0553e-13
+  GENERAL: 0.0000e+00 (Δ=+2.0553e-13)
+  CHILD : 0.0000e+00 (Δ=+2.0553e-13)
+
+30–45 Hz band power (avg across channels):
+  RAW   : 2.7005e-12
+  GENERAL: 1.2044e-13 (Δ=+2.5801e-12)
+  CHILD : 2.1375e-13 (Δ=+2.4868e-12)
+
+Saved:
+  viz_diffs/01_traces_raw_gen_child.png
+  viz_diffs/02_psd_overlay.png
+  viz_diffs/03_difference_traces.png

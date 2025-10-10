@@ -1,0 +1,4 @@
+row_index,style,best_val_loss,final_test_loss,final_test_r
+1,general,0.226901,0.290832,0.790502
+2,general,0.164840,0.252280,0.799399
+3,general,0.404313,0.244118,0.744857

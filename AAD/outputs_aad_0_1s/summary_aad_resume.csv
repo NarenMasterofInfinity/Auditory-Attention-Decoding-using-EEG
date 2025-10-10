@@ -1,0 +1,2 @@
+subject,epochs_additional,val_acc,val_auc,test_acc,test_auc,ckpt_used
+2,1,0.9984375,0.9999893523233182,0.998515625,0.999992174130552,AAD/outputs_aad_0_1s/S2/best_model.pt
